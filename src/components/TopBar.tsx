@@ -170,6 +170,11 @@ export default function TopBar() {
               </a>
             </Menu.Item>
           )}
+          {connected && (!searchFocussed || location.pathname === '/profile') && (
+            <Menu.Item key="/profile" style={{ margin: '0 10px' }}>
+              PROFILE
+            </Menu.Item>
+          )}
           {connected && (!searchFocussed || location.pathname === '/balances') && (
             <Menu.Item key="/balances" style={{ margin: '0 10px' }}>
               BALANCES

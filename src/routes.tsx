@@ -3,6 +3,7 @@ import TradePage from './pages/TradePage';
 import OpenOrdersPage from './pages/OpenOrdersPage';
 import React from 'react';
 import BalancesPage from './pages/BalancesPage';
+import ProfilePage from './pages/ProfilePage';
 import ConvertPage from './pages/ConvertPage';
 import BasicLayout from './components/BasicLayout';
 import ListNewMarketPage from './pages/ListNewMarketPage';
@@ -25,6 +26,7 @@ export function Routes() {
             </Route>
             <Route exact path="/orders" component={OpenOrdersPage} />
             <Route exact path="/balances" component={BalancesPage} />
+            <Route exact path="/profile" component={ProfilePage} />
             <Route exact path="/convert" component={ConvertPage} />
             <Route
               exact
