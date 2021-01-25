@@ -3,7 +3,7 @@ import TradePage from './pages/TradePage';
 import OpenOrdersPage from './pages/OpenOrdersPage';
 import React from 'react';
 import BalancesPage from './pages/BalancesPage';
-import ProfilePage from './pages/ProfilePage';
+import ProfilePage from './pages/ProfilePage.jsx';
 import ConvertPage from './pages/ConvertPage';
 import BasicLayout from './components/BasicLayout';
 import ListNewMarketPage from './pages/ListNewMarketPage';
