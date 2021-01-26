@@ -72,13 +72,13 @@ export default function Profile() {
 
   return (
     <FloatingElement style={{ flex: 1, paddingTop: 10 }}>
-      {account && (
+      {account ? (
         <Tabs defaultActiveKey="profile">
           <TabPane tab="My Profile" key="profile">
             <Row align="middle" gutter={16}>
               <Col>
                 <Avatar
-                  size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
+                  size={{ xs: 40, sm: 40, md: 40, lg: 64, xl: 80, xxl: 100 }}
                   icon={<UserOutlined />}
                 />
               </Col>
@@ -100,6 +100,8 @@ export default function Profile() {
             Here I can see my trades.
           </TabPane>
         </Tabs>
+      ) : (
+        <p>Please login.</p>
       )}
     </FloatingElement>
   );
